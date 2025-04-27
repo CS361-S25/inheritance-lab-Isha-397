@@ -12,13 +12,11 @@ int main() {
     population.push_back(new Dog(5, 2));
 
     std::cout << population[0]->GetType() << std::endl; // Should print "Dog"
-    return 0;
-
     std::cout << population[0]->GetAge() << std::endl; // Should print dog's age in dog years
 
     population.push_back(population[0]->Reproduce());
     std::cout << population[1]->GetType() << std::endl; // Should print "Dog"
 
-
+    return 0;
 }
 
